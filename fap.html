@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="hit"></p>
+    <h1 id="low"></h1>
+
+    <h1 id="zoom"></h1>
+    <h2 id="myobj"></h2>
+    <p id="per"></p>
+    <p id="lov"></p>
+    <h4 id="lux"></h4>
+    <p id="slur"></p>
+
+    <p id="tum"></p>
+    <p id="interest"></p>
+    <p id="pines"></p>
+    <p id="pine"></p>
+    <script>
+        document.write('Vi va la france');
+        var x,y,z;
+        x=5;
+        y=6;
+        z=x+(-y);
+        document.getElementById('hit').innerHTML= 'z =' + z;
+        var x,y,z
+        x=100;
+        y=105;
+        z=x*y;
+        document.getElementById('low').innerHTML='z ='+z;
+
+        var X='Daniel';
+        document.getElementById('zoom').innerHTML=X
+
+        var x= 'Daniel' + '' + 'Ogaji-Amachree';
+        document.getElementById('tum').innerHTML= x;
+
+      function simpleinterest(p,t,r){
+        return(p*t*r)/100
+      }
+      document.getElementById('interest').innerHTML= simpleinterest(200000,2,50);
+
+      var car = {type:'fait',model:'500',color:'white'}
+      document.getElementById('myobj') .innerHTML= "The car type is " + car.type + " and the car model is " + car.model
+
+      var person ={
+        firstname: "John",
+        lastname: "Doe",
+        age: "50",
+        eyecolor: "hazel"
+      };
+      document.getElementById("per").innerHTML= "My name is " + person.firstname  + " "  +person.lastname + " i am " + person.age;
+
+      var being ={
+        firstname1: "Gaberiel",
+        firstname2: "Davis",
+        lastname1: "Johnwell",
+        lastname2: "Johnwell",
+        id : "2002",
+        fullname: function(){
+            return this.firstname1 + " "+ this.lastname1 + " " + "<br>" + this.firstname2 + " " + this.lastname2
+        }
+      };
+      document.getElementById("lov").innerHTML= being.fullname() + " with ID no " + being.id
+
+      var cars=[
+        "BMW",
+        "Volvo",
+        "G-wagon"
+      ];
+      cars[0]= "Ferrai"
+      document.getElementById('lux').innerHTML=cars
+
+      var damn=[
+        "BMW",
+        "Volvo",
+        "G-wagon"
+      ];
+      damn.push("Flash")
+      damn[damn.length]="device"
+      document.getElementById('slur').innerHTML= damn
+
+      var fruits= ['Mango','Banana','Kiwi','Pineapple'];
+      document.getElementById('pines').innerHTML=fruits
+      fruits.unshift('Lemon');
+      document .getElementById('pine').innerHTML=fruits
+
+    </script>
+</body>
+</html>
